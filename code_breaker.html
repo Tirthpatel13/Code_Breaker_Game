@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title> Code Breaker </title>
+  <link rel="stylesheet" type="text/css" href="code_breaker.css" title="style" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="code_breaker_client.js"></script>
+</head>
+<body>
+<div id="main">
+<h2>Code Breaker</h2>
+<h3>Welcome <span id="name"></span> to the game!</h3>
+<h4>Time: <span id="timer">0s</span></h4>
+    <div id="gameboard">
+        <img src="./images/cover.png" id="cover"/>
+		
+        <div id="coderow">
+        </div>
+    </div>
+	
+    <div id="pegselection">
+    </div>
+    
+    <div id="rulesModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Code Breaker Rules</h3>
+        <p>The objective of the game is to guess the secret code in a limited number of attempts. Each code consists of colored balls placed in a specific order. After each guess, you will receive feedback:</p>
+        <ul>
+            <li><strong>Exact Match:</strong> The correct color in the correct position.</li>
+            <li><strong>Partial Match:</strong> The correct color in the wrong position.</li>
+            <li><strong>No Match:</strong> A color that is not in the secret code.</li>
+        </ul>
+        <p>Use these clues to solve the code before running out of attempts. Good luck!</p>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
