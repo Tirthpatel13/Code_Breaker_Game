@@ -55,11 +55,6 @@ window.onload = function() {
             $("#rulesModal").fadeOut();
         }
     });
-
-    // Set the popup timeout for 100 seconds
-    popupTimeout = setTimeout(function() {
-        alert("100 seconds have passed. Please review your progress!");
-    }, 100000); // 100 seconds in milliseconds
 }
 
 /* 
