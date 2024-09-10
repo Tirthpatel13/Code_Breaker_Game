@@ -10,22 +10,35 @@ body {
 /* Style for the main title "Code Breaker" */
 h2 {
     font-family: 'Arial', sans-serif; /* A clean sans-serif font */
-    font-size: 4em; /* Large font size */
+    font-size: 8vw; /* Responsive font size */
     font-weight: bold; /* Bold text */
     color: #3ed3f8; /* Light blue text color */
-    text-align:center; /* Center the text */
-    letter-spacing: 8px; /* Larger spacing between letters */
+    text-align: center; /* Center the text */
+    letter-spacing: 0.5em; /* Larger spacing between letters */
     text-transform: uppercase; /* Uppercase text */
     text-shadow: 
         0px 0px 15px #3ed3f8, /* Light blue outer glow */
         0px 0px 5px #001f3f; /* Dark blue inner glow */
-    /*background-color: #001f3f; /* Dark blue background */
-    display: inline-block; /* Ensure background fits the text */
+    display: block; /* Block display to center properly */
     padding: 10px 20px; /* Padding around the text */
-    /*border: 3px solid #3ed3f8; /* Light blue border around the text */
-    margin: 5px 0; /* Margin for spacing */
-    margin-left: 430px;
+    margin: 20px auto; /* Center horizontally and add top/bottom margin */
 }
+
+/* Add media queries for responsiveness */
+@media (min-width: 768px) { /* Tablet and above */
+    h2 {
+        font-size: 3em; /* Larger font size for tablets and laptops */
+        letter-spacing: 0.25em; /* Adjust letter spacing */
+    }
+}
+
+@media (min-width: 1024px) { /* Desktop and above */
+    h2 {
+        font-size: 4em; /* Even larger font size for desktops */
+        letter-spacing: 0.3em; /* Adjust letter spacing */
+    }
+}
+
 
 h3, h4 {
     color: #e0e0e0;
