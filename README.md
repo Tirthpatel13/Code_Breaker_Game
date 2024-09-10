@@ -1,1 +1,2 @@
-# Code_Breaker_Game
+# Mastermind Game
+This project is a web-based implementation of the classic code-breaking game Mastermind. Players attempt to guess a secret code within a limited number of attempts by selecting colored pegs. After each guess, feedback is provided indicating how many pegs are correct in both color and position, and how many are correct in color but in the wrong position. The game is built using HTML, CSS, and JavaScript on the front-end, with a Node.js server handling the game logic and client-server communication. The game features a dynamic UI, customizable settings, and interactive gameplay, offering a fun and challenging experience for users of all ages.
